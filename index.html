@@ -1,84 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>John Doe</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Portfolio</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active">Home</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#blog" class="nav__link">Blog</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm a self-taught web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and WordPress.</p>
-    </div>
-  </section>
+    <main>
+        <section id="home" class="hero section">
+            <div class="container hero__container">
+                <span class="hero__subtitle">Frontend Developer</span>
+                <h1 class="hero__title">Building Modern Web Experiences</h1>
+                <p class="hero__description">
+                    Crafting responsive and user-friendly websites with modern technologies
+                    and best practices in web development.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#contact" class="button">
+                        Let's Work Together
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero__social">
+                    <a href="#" class="hero__social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="hero__social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <img src="project1.jpg" alt="Project 1">
-        <p>Description of Project 1.</p>
-        <a href="https://example.com/project1" target="_blank">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <img src="project2.jpg" alt="Project 2">
-        <p>Description of Project 2.</p>
-        <a href="https://example.com/project2" target="_blank">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Project 3</h3>
-        <img src="project3.jpg" alt="Project 3">
-        <p>Description of Project 3.</p>
-        <a href="https://example.com/project3" target="_blank">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Project 4</h3>
-        <img src="project4.jpg" alt="Project 4">
-        <p>Description of Project 4.</p>
-        <a href="https://example.com/project4" target="_blank">View Project</a>
-      </div>
-    </div>
-  </section>
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section__title">Technical Skills</h2>
+                <div class="skills__grid">
+                    <div class="skill__item">
+                        <i class="fab fa-html5"></i>
+                        <h4>HTML5</h4>
+                        <p>Semantic markup and modern HTML features</p>
+                    </div>
+                    <div class="skill__item">
+                        <i class="fab fa-css3-alt"></i>
+                        <h4>CSS</h4>
+                        <p>Responsive design and animations</p>
+                    </div>
+                    <div class="skill__item">
+                        <i class="fab fa-js"></i>
+                        <h4>JavaScript</h4>
+                        <p>Modern ES6+ and DOM manipulation</p>
+                    </div>
+                    <div class="skill__item">
+                        <i class="fab fa-css3"></i>
+                        <h4>Tailwind CSS</h4>
+                        <p>Utility-first CSS framework</p>
+                    </div>
+                    <div class="skill__item">
+                        <i class="fab fa-wordpress"></i>
+                        <h4>WordPress</h4>
+                        <p>Custom theme and plugin development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="submit_form.php" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+        <section id="blog" class="blog section">
+            <div class="container">
+                <h2 class="section__title">Latest Posts</h2>
+                <div class="blog__posts">
+                    <article class="blog__post">
+                        <header class="blog__header">
+                            <span class="blog__date">June 15, 2025</span>
+                            <h3 class="blog__title">Mastering Tailwind CSS</h3>
+                        </header>
+                        <p class="blog__excerpt">
+                            Tips and tricks for building efficient user interfaces with Tailwind CSS.
+                        </p>
+                        <a href="#" class="blog__read-more">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    <article class="blog__post">
+                        <header class="blog__header">
+                            <span class="blog__date">June 10, 2025</span>
+                            <h3 class="blog__title">Modern JavaScript Features</h3>
+                        </header>
+                        <p class="blog__excerpt">
+                            Exploring the latest JavaScript features and best practices.
+                        </p>
+                        <a href="#" class="blog__read-more">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 John Doe. All rights reserved.</p>
-    </div>
-  </footer>
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section__title">Get in Touch</h2>
+                <form class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input" required>
+                        <input type="email" placeholder="Email" class="contact__input" required>
+                    </div>
+                    <textarea class="contact__input contact__textarea" placeholder="Message" required></textarea>
+                    <button type="submit" class="button">
+                        Send Message
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copy">
+                © 2025 Your Name. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
